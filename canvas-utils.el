@@ -131,7 +131,7 @@
   (declare (indent 2))
   (let ((json-sym (gensym "json")))
     `(let ((,json-sym ,json))
-       (let ,(loop for
+       (let ,(cl-loop for
                    (sym path)
                    in
                    defs
